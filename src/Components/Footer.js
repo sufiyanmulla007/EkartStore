@@ -2,7 +2,8 @@ import React from 'react'
 import styled from 'styled-components';
 import { NavLink } from "react-router-dom";
 import { Button } from "../styles/Button";
-import { FaLinkedin , FaInstagram, FaYoutube } from "react-icons/fa";
+import { FaLinkedin , FaInstagram } from "react-icons/fa";
+import { GoMarkGithub } from "react-icons/go";
 const Footer = () => {
   return (
     <>
@@ -41,13 +42,17 @@ const Footer = () => {
               <h3>Follow Us</h3>
               <div className="footer-social--icons">
                 <div>
-                  <FaYoutube className="icons" />
-                </div>
-                <div>
-                  <FaInstagram className="icons" />
-                </div>
-                <div>
                   <a
+                  href="https://github.com/"
+                  target="_blank">
+                <GoMarkGithub className="icons" />
+                </a>
+                </div>
+                <div>
+                <FaInstagram className="icons" />
+                </div>
+                <div>
+                   <a
                     href="https://www.linkedin.com/in/mohammed-sufiyan-914329244/"
                     target="_blank">
                     <FaLinkedin className="icons" />
