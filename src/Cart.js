@@ -59,9 +59,10 @@ if (cart.length === 0) {
             <div>
               <p>order total:</p>
               <p>
-                <FormatPrice price={shipping_fee + total_price} />
+              <FormatPrice price={shipping_fee + total_price} />
               </p>
             </div>
+            <Button style={{backgroundColor:"green"}}>Order Place</Button>
           </div>
         </div>
         </div>

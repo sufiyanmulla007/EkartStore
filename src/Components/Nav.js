@@ -4,10 +4,15 @@ import { FiShoppingCart } from "react-icons/fi";
 import { CgMenu, CgClose } from "react-icons/cg";
 import styled from 'styled-components';
 import { useCartContext } from "../Context/cart_context";
+import { Button } from "../styles/Button";
 
 const Nav = () => {
 const [menuIcon, setMenuIcon] = useState();
 const { total_item } = useCartContext();
+// const [isLoggedIn, setIsLoggedIn]=useState(false); //login 
+// const handleClick = () => {
+//   setIsLoggedIn(!isLoggedIn);
+// };
 const Nav = styled.nav`
     .navbar-lists {
       display: flex;
@@ -181,6 +186,17 @@ const Nav = styled.nav`
               <span className="cart-total--item">{total_item}</span>
             </NavLink>
           </li>
+          <li>
+            
+          <NavLink to="/Login">
+          <Button>Login</Button>
+          </NavLink>
+          </li>
+          {/* <li>
+          <NavLink to="/">
+          <Button>Log out</Button>
+          </NavLink>
+         </li> */}
         </ul>
 
         {/* two button for open and close of menu */}

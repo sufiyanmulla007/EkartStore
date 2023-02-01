@@ -2,6 +2,7 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 import About from './About';
+import Login from './Admin/Login';
 import './App.css';
 import Cart from './Cart';
 import Footer from './Components/Footer';
@@ -52,6 +53,7 @@ function App() {
    <Route path='/contact' element={<Contact/>}/>
    <Route path='/SingleProduct/:id' element={<SingleProduct/>}/>
    <Route path='/Cart' element={<Cart/>}/>
+   <Route path='Login' element={<Login/>}/>
    <Route path="*" element={<ErrorPage/>}/>
    </Routes>
    <Footer/>
