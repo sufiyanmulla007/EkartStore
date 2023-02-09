@@ -1,5 +1,20 @@
-const ProductReducer = (state,action)=>{
-switch (action.type) {
+const ProductReducer = (state, action) => {
+  // if (action.type === "SET_LOADING") {
+  //   return {
+  //     ...state,
+  //     isLoading: true,
+  //   };
+  // }
+
+  // if (action.type === "API_ERROR") {
+  //   return {
+  //     ...state,
+  //     isLoading: false,
+  //     isError: true,
+  //   };
+  // }
+
+  switch (action.type) {
     case "SET_LOADING":
       return {
         ...state,
@@ -24,8 +39,8 @@ switch (action.type) {
         isLoading: false,
         isError: true,
       };
-      //single product
-      case "SET_SINGLE_LOADING":
+
+    case "SET_SINGLE_LOADING":
       return {
         ...state,
         isSingleLoading: true,
@@ -45,9 +60,9 @@ switch (action.type) {
         isError: true,
       };
 
-
     default:
       return state;
   }
 };
+
 export default ProductReducer;

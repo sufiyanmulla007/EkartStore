@@ -3,8 +3,8 @@ import { NavLink } from "react-router-dom";
 import { FiShoppingCart } from "react-icons/fi";
 import { CgMenu, CgClose } from "react-icons/cg";
 import styled from 'styled-components';
-import { useCartContext } from "../Context/cart_context";
 import { Button } from "../styles/Button";
+import { useCartContext } from "../Context/cart_context";
 
 const Nav = () => {
 const [menuIcon, setMenuIcon] = useState();

@@ -25,7 +25,7 @@ useProductContext();
     company,
     price,
     description,
-    category,
+    // category,
     stock,
     stars,
     reviews,

@@ -5,7 +5,14 @@ const Contact = () => {
    <>
    <Wrapper>
   <h2 className="common-heading">Feel Free To Contact Us</h2>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.2127528507717!2d79.12327981424737!3d21.14392988921404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c75d0df94527%3A0x8dc34080a61558ab!2sEkart%20Logistics%20Wardhman%20Nagar%20Hub!5e0!3m2!1sen!2sin!4v1667639573197!5m2!1sen!2sin" width="100%" height="400" style={{border:0}} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+    <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.2127528507717!2d79.12327981424737!3d21.14392988921404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c75d0df94527%3A0x8dc34080a61558ab!2sEkart%20Logistics%20Wardhman%20Nagar%20Hub!5e0!3m2!1sen!2sin!4v1667639573197!5m2!1sen!2sin" 
+    width="100%" height="400" 
+    style={{border:0}} allowFullScreen=""
+     loading="lazy" 
+     title="mymap"
+     referrerPolicy="no-referrer-when-downgrade">
+    </iframe>
     <div className="container">
         <div className="contact-form">
           <form

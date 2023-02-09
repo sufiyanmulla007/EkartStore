@@ -32,7 +32,7 @@ const FilterSection = () => {
   const colorsData = getUniqueData(all_products, "colors");
   //  console.log(
   //   "🚀 ~ file: FilterSection.js ~ line 23 ~ FilterSection ~ companyData",
-  //   colorsData
+  //   categoryData
   // );
   return (
     <Wrapper>
