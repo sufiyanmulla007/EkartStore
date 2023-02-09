@@ -10,7 +10,7 @@ const Login = () => {
   password:"",
 });
 // console.log(userdata);
-// const [data,setData]=useState([]); //localstorage
+const [data,setData]=useState([]); //localstorage
 
 const handleChange =(e)=>{
 //  console.log(e.target.value)
@@ -36,7 +36,7 @@ const handleSubmit =(e)=>{
   }else{
     // alert("your login");
     swal("Success", "You are Successfully Login!", "success");
-  //  localStorage.setItem("userlogin",JSON.stringify([...data,userdata]));
+   localStorage.setItem("userlogin",JSON.stringify([...data,userdata]));
        history("/Products");
   }
 }
