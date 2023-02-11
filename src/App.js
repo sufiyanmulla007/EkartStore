@@ -5,10 +5,12 @@ import About from './About';
 import Login from './Admin/Login';
 import './App.css';
 import Cart from './Cart';
+import Checkout from './Checkout';
 import Footer from './Components/Footer';
 import Header from './Components/Header';
 import Contact from './Contact';
 import ErrorPage from './ErrorPage';
+import Final from './Final';
 import { GlobalStyle } from './GlobalStyle';
 import Home from './Home';
 import Products from './Products';
@@ -53,6 +55,8 @@ function App() {
    <Route path='/contact' element={<Contact/>}/>
    <Route path='/SingleProduct/:id' element={<SingleProduct/>}/>
    <Route path='/Cart' element={<Cart/>}/>
+   <Route path='Checkout' element={<Checkout/>}/>
+   <Route path='Final' element={<Final/>}/>
    <Route path='Login' element={<Login/>}/>
    <Route path="*" element={<ErrorPage/>}/>
    </Routes>

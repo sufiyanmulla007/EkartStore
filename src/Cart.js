@@ -62,6 +62,9 @@ if (cart.length === 0) {
     <FormatPrice price={shipping_fee + total_price} />
     </p>
     </div>
+    <NavLink to="/Checkout">
+    <Button style={{backgroundColor:"green",width:"100%"}}> Checkout</Button>
+    </NavLink>
     </div>
     </div>
     </div>
